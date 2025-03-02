@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fade-in animation for the entire body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(71, 71, 172), purple);
+}
+
+/* Container animation */
+.container {
+    background-image: linear-gradient(to bottom right, rgb(72, 17, 95), purple);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 48vh;
+    width: 52vh;
+    box-shadow: 0px 0px 20px rgba(243, 241, 241, 0.351);
+}
+
+/* Heading and paragraph animations */
+h1 {
+    color: rgb(201, 170, 206);
+    animation: textGlow 22s infinite alternate;
+}
+
+p {
+    color: #cca6c3;
+}
+
+/* Form elements animation */
+form {
+    margin: 2rem 0 1rem 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+form select,
+button,
+input {
+    background-color: rgba(210, 164, 210, 0.577);
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+form input {
+    background-color: rgb(228, 204, 231);
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+
+/* Button hover effect */
+form button {
+    height: 3rem;
+    background-color: #af4d98;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #8a3979;
+    transform: scale(1.05);
+}
+
+/* Dropdown animations */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Select container animations */
+.select-container img {
+    max-width: 2rem;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+}
+
+.select-container:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Message fade-in effect */
+.msg {
+    color: #bb7fb8;
+    margin: 2rem 3.5rem 2rem 4.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
